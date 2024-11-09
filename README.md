@@ -156,4 +156,4 @@ Thank you to everyone who has contributed to the open-source ecosystem, making i
 ## Contact
 
 If you have any questions or need further assistance, please don't hesitate to reach out to us at
-[contact email](mailto:contact email). We're always happy to help.
+[contact email](mailto:Fantastizeey@gmail.com). We're always happy to help.
