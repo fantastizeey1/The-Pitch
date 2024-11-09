@@ -1,6 +1,6 @@
-# Startup Showcase App
+# The Pitch
 
-Welcome to the Startup Showcase App! This web application allows users to explore various startups, view detailed profiles, and connect with startup founders. Built using Next.js and Sanity.io, this app leverages Client-Side Rendering (CSR) techniques for a seamless user experience.
+Welcome to the The Pitch a Startup Showcase App! This web application allows users to explore various startups, view detailed profiles, and connect with startup founders. Built using Next.js and Sanity.io, this app leverages Client-Side Rendering (CSR) techniques for a seamless user experience.
 
 ## Table of Contents
 
