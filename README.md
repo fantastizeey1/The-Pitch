@@ -150,7 +150,7 @@ This project is licensed under the MIT License. See the LICENSE file for details
 ## Acknowledgments
 
 This project was built using Next.js, Tailwind CSS, and various other open-source libraries. We extend our heartfelt thanks to the creators of these libraries for their hard work and dedication to the open-source community.
-We would also like to express our gratitude to JSM Mastery and specifically Adrian Hajdin for his invaluable guidance and support throughout this project. His tutorials and resources have been a significant source of inspiration, helping us to enhance our skills and implement best practices in web development. You can check out his work on GitHub: JSM Mastery GitHub[https://github.com/adrianhajdin].
+We would also like to express our gratitude to JSM Mastery and specifically Adrian Hajdin for his invaluable guidance and support throughout this project. His tutorials and resources have been a significant source of inspiration, helping us to enhance our skills and implement best practices in web development. You can check out his work on [GitHub: JSM Mastery GitHub](https://github.com/adrianhajdin).
 Thank you to everyone who has contributed to the open-source ecosystem, making it easier for developers to learn, grow, and build amazing applications!
 
 ## Contact
