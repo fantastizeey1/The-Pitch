@@ -28,6 +28,10 @@ export const author = defineType({
       name: "bio",
       type: "text",
     }),
+    defineField({
+      name: "id",
+      type: "string",
+    }),
   ],
   preview: {
     select: {

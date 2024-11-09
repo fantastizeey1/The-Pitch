@@ -23,15 +23,16 @@ const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
 
   const [post, editorPostsResponse] = await Promise.all([
     client.fetch(STARTUP_BY_ID_QUERY, { id }),
-    client.fetch(PLAYLIST_BY_SLUG_QUERY, { slug: "editor-picks" }),
+    client.fetch(PLAYLIST_BY_SLUG_QUERY, { slug: "editor-pick" }),
   ]);
 
   if (!post) return notFound();
 
-  // Check if editorPostsResponse is valid
+  // Log the response for debugging
   console.log("Editor Posts Response:", editorPostsResponse);
 
-  const editorPosts = editorPostsResponse?.select || []; // Adjust based on actual response structure
+  // Adjust based on actual response structure
+  const editorPosts = editorPostsResponse?.select || []; // Default to an empty array if select is undefined
 
   const parsedContent = post.pitch ? md.render(post.pitch) : "";
 

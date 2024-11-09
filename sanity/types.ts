@@ -180,6 +180,7 @@ export type Author = {
   email?: string;
   image?: string;
   bio?: string;
+  id?: string;
 };
 
 export type Markdown = string;
