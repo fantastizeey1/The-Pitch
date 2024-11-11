@@ -5,6 +5,7 @@ import { BadgePlus, LogOut } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { FaSquareGithub } from "react-icons/fa6";
 import { FcGoogle } from "react-icons/fc";
+import { Button } from "./ui/button";
 
 const Navbar = async () => {
   const session = await auth();
@@ -27,7 +28,6 @@ const Navbar = async () => {
               <form
                 action={async () => {
                   "use server";
-
                   await signOut({ redirectTo: "/" });
                 }}
               >
@@ -37,8 +37,13 @@ const Navbar = async () => {
                 </button>
               </form>
 
-              <Link href={`/user/${session?.id}`} className="flex flex-row gap-2 items-center">
-                <p className="text-sm sm:text-base font-medium">{session?.user?.name || ""}</p>
+              <Link
+                href={`/user/${session?.id}`}
+                className="flex flex-row gap-2 items-center"
+              >
+                <p className="text-sm sm:text-base font-medium">
+                  {session?.user?.name || ""}
+                </p>
                 <Avatar className="size-10">
                   <AvatarImage
                     src={session?.user?.image || ""}
@@ -56,27 +61,9 @@ const Navbar = async () => {
               </Link>
             </>
           ) : (
-            <div className="flex gap-2">
-              {/* GitHub Login Button */}
-              <form
-                action={async () => {
-                  "use server";
-                  await signIn("github");
-                }}
-              >
-                <button type="submit" className="flex justify-center items-center gap-2">Login with <FaSquareGithub /></button>
-              </form>
-
-              {/* Google Login Button */}
-              <form
-                action={async () => {
-                  "use server";
-                  await signIn("google");
-                }}
-              >
-                <button type="submit" className="flex justify-center items-center gap-2" >Login with <FcGoogle /></button>
-              </form>
-            </div>
+            <Link href="/login" className="flex gap-2">
+              <Button>Login</Button>
+            </Link>
           )}
         </div>
       </nav>

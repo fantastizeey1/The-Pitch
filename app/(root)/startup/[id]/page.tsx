@@ -28,9 +28,6 @@ const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
 
   if (!post) return notFound();
 
-  // Log the response for debugging
-  console.log("Editor Posts Response:", editorPostsResponse);
-
   // Adjust based on actual response structure
   const editorPosts = editorPostsResponse?.select || []; // Default to an empty array if select is undefined
 

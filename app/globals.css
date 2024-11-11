@@ -219,3 +219,88 @@
 .w-md-editor-toolbar {
   padding: 10px !important;
 }
+/* modal style*/
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+  height: 60vh;
+  background-color: #f7f9fc;
+  padding: 20px;
+}
+
+.login-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.login-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically on small screens */
+  gap: 10px; /* Space between buttons */
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.7rem;
+  color: white; /* Text color */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.github-button {
+  background-color: #333; /* GitHub button color */
+}
+
+.google-button {
+  background-color: #db4437; /* Google button color */
+}
+
+.social-button:hover {
+  opacity: 0.9; /* Slightly darken on hover */
+}
+
+.icon {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+/* Responsive Styles */
+@media (min-width: 600px) {
+  .button-container {
+    flex-direction: column; /* Align buttons horizontally on larger screens */
+    width: auto; /* Allow buttons to take their natural width */
+    gap: 20px; /* Increase space between buttons */
+    justify-content: center; /* Center buttons horizontally */
+    margin-top: 20px; /* Add space above the button container */
+  }
+
+  .social-button {
+    padding: 12px; /* Increase padding for larger screens */
+    font-size: 1.1rem; /* Slightly larger text on bigger screens */
+    min-width: 250px; /* Set a minimum width for buttons */
+    max-width: calc(
+      50% - 10px
+    ); /* Limit width on larger screens for better layout */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px; /* Add subtle shadow for depth */
+    transition: transform 0.2s ease-in-out; /* Add transition for hover effect */
+    border-radius: 0.5rem; /* More rounded corners for modern look */
+
+    &:hover {
+      transform: translateY(-2px); /* Lift effect on hover */
+    }
+  }
+}

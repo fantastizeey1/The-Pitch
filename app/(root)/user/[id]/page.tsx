@@ -6,6 +6,8 @@ import Image from "next/image";
 import UserStartups from "@/components/UserStartups";
 import { Suspense } from "react";
 import { StartupCardSkeleton } from "@/components/StartupCard";
+// import { Button } from "@/components/ui/button";
+// import Link from "next/link";
 
 export const experimental_ppr = true;
 
@@ -27,7 +29,7 @@ const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
           </div>
 
           <Image
-            src={user.image || "/placeholder.jpg"} // Use a placeholder image if none exists
+            src={user.image || "/placeholder.jpg"}
             alt={user.name || "User Image"}
             width={220}
             height={220}
@@ -40,6 +42,14 @@ const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
           <p className="mt-1 text-center text-14-normal">
             {user.bio || "You do not have bio Available"}
           </p>
+          {/* {session?.id === id && (
+            <Link
+              className="border-2 rounded-lg mt-2 border-white"
+              href={`/user/${id}/edit`}
+            >
+              <Button>Edit Profile</Button>
+            </Link>
+          )} */}
         </div>
 
         <div className="flex-1 flex flex-col gap-5 lg:-mt-5">

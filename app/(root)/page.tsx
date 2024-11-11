@@ -16,8 +16,6 @@ export default async function Home({
 
   const { data: posts } = await sanityFetch({ query: STARTUPS_QUERY, params });
 
-  console.log("Fetched Posts:", posts);
-
   return (
     <>
       <section className="pink_container">
