@@ -4,7 +4,7 @@ import { FaSquareGithub } from "react-icons/fa6";
 import { FcGoogle } from "react-icons/fc";
 const LoginPage = () => {
   return (
-    <div className="login-container w-[40%] rounded-xl">
+    <div className="login-container w-[90%] md:w-[40%] rounded-xl">
       <h1 className="login-title">Welcome Back!</h1>
       <p className="login-subtitle">Please log in to continue</p>
       <div className="button-container">
